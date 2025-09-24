@@ -29,7 +29,7 @@ export default function Chat({ room }) {
         }
 
         // Se conecta al servidor de WebSocket
-        socketRef.current = io('http://localhost:3000', {
+        socketRef.current = io(`${import.meta.env.VITE_BACKEND_URL}`, {
             auth: {
                 username: getUsername(),
                 room,
