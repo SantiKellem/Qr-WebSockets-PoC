@@ -8,9 +8,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start" : "npx http-server ./dist -p $PORT"
+    "start": "npx http-server ./dist -p $PORT"
   },
   "dependencies": {
+    "qrcode.react": "^4.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
